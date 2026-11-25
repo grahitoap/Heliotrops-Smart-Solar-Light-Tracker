@@ -56,38 +56,6 @@ Selain melakukan pelacakan cahaya, sistem ini juga dilengkapi sensor INA219 untu
 - Pandas
 - Plotly
 
-## 🏗️ Arsitektur Sistem
-
-```text
-       4× LDR Sensor       INA219
-             │               │
-             └───────┬───────┘
-                     │
-                   ESP32
-                     │
-           ┌─────────┴─────────┐
-           │                   │
-      LCD 16×2 I2C       2× Stepper Motor
-                               │
-                        Solar Tracking
-                     │
-                     ▼
-                MQTT Broker
-                     │
-                     ▼
-          Python MQTT Subscriber
-                     │
-                     ▼
-                SQLite DB
-                     │
-                     ▼
-           Streamlit Dashboard
-                     │
-              Monitoring &
-              Remote Control
-                     │
-                     └──── MQTT Command ────► ESP32
-```
 
 ## 📂 Struktur Folder Proyek
 
@@ -270,9 +238,13 @@ Melalui proyek ini, beberapa konsep teknologi yang diterapkan meliputi:
 ## 👨‍💻 Pengembang
 
 **1. Grahito Ardianto Purnomo (123240001)**
+
 **2. Fahri Hidayatullah (123240002)**
+
 **3. Krocasadigandra Arzaq Kubro Muhammad (123240015)**
+
 **4. Hardanu Ilham Purnama (123240166)**
+
 
 Mahasiswa Informatika  
 Universitas Pembangunan Nasional "Veteran" Yogyakarta
